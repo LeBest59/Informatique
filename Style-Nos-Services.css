@@ -1,0 +1,49 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+}
+a:hover{
+    color: yellow;
+    transition: 1.5s;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/*----------header---------*/
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(header-background/Rectangle\ 4.png);
+    background-size: cover;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+/*------main---------*/
+.parentphoto{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.boderphoto{
+    width: 300px;
+    height: 250px;
+    margin-top: 50px;
+    border-style: solid;
+}
+.deuxtext{
+    margin-top: 50px    ;
+    display: flex;
+    justify-content: space-around;
+}
+.divbutton{
+    margin-top: 50px;
+    margin-left: 30%;
+    display: flex;
+    justify-content: center;
+    background-color: #404040;
+    width: 40%;
+    border-radius: 30px;
+}
