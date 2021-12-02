@@ -27,7 +27,7 @@ header{
     display: flex;
     justify-content: space-around;
 }
-.boderphoto{
+.boderphoto,.boderphoto1{
     width: 300px;
     height: 250px;
     margin-top: 50px;
@@ -46,4 +46,17 @@ header{
     background-color: #404040;
     width: 40%;
     border-radius: 30px;
+}
+@media (max-width: 900px){
+.parentphoto{
+    justify-content: center;
+}
+
+.boderphoto1{
+    display: none;
+}
+.deuxtext{
+    flex-direction: column;
+    text-align: center;
+}
 }
