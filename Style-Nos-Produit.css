@@ -37,6 +37,7 @@ header{
     border-radius: 20px;
     width: 150px;
     height: 30px;
+    border-style: solid;
 }
 .menu{
     width: 150px;
@@ -87,3 +88,6 @@ header{
     width: 150px;
     height: 30px;
 }
+
+.img-un{border-style: solid;}
+
