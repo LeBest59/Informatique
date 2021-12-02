@@ -19,6 +19,11 @@ header{
     background-size: cover;
     height: 150px;
     background-repeat: no-repeat;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> aab58baf06f75787a7af8a8211e79882993be0db
 }
 /*-------------main----------*/
 .toolbar{
@@ -39,6 +44,7 @@ header{
     height: 30px;
 }
 .menu{
+<<<<<<< HEAD
     width: 150px;
     height: 30px;
 }
@@ -82,4 +88,12 @@ header{
 
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
+=======
+    border-style: solid;
+    background-color: rgb(107, 41, 41);
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+>>>>>>> b99423ee8bd03ca480b36f22c6ebdb4d3e4c2d5b
+>>>>>>> aab58baf06f75787a7af8a8211e79882993be0db
 }
