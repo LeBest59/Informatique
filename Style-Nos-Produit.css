@@ -89,5 +89,30 @@ header{
     height: 30px;
 }
 
-.img-un{border-style: solid;}
-
+.img-un{
+    border-style: solid;
+    border-color: black;
+    width: 200px;
+    height: 200px;
+}
+.img-2{
+    border-style: solid;
+    border-color: black;
+    width: 200px;
+    height: 200px;
+}
+.conteneur-img{
+    display: flex;
+    flex-direction: column;
+}
+.conteneur-img1{
+    display: flex;
+    flex-direction: column;
+}
+.conteneur-tout-img{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}

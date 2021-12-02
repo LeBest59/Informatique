@@ -40,3 +40,6 @@ label{
     display: flex;
     justify-content: center;
 }
+footer{
+    border-style: solid;
+}
