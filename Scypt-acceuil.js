@@ -1,111 +1,86 @@
-let slide_one = document.getElementById('one')
-let slide_two = document.getElementById('two')
-let slide_three = document.getElementById('three')
-let slide_four = document.getElementById('four')
-let slide_five = document.getElementById('five')
+const slider = document.querySelector('.slideshow-container')
+let holding = false;
+let firstClickX;
+let alreadyLeftScrolled;
+let velocity;
+let rafID;
 
+slider.addEventListener('mousedown', e => {
+  holding = true;
 
-var stock = 0
+  firstClickX = e.pageX - slider.offsetLeft;
 
-let btn_prev = document.getElementById('btn-prev')
-
-btn_prev.addEventListener('click', function(){
-
-    stock--
-    slide(stock)
-
-
+  alreadyLeftScrolled = slider.scrollLeft;
+  
+  stopTransition()
 })
 
+slider.addEventListener('mousemove', e => {
+  if(!holding) return;
 
+  const x = e.pageX - slider.offsetLeft;
 
-let btn_suiv = document.getElementById('btn-suiv')
+  const scrolled = (x - firstClickX) * 2;
 
+  const prevScrollLeft = slider.scrollLeft
 
-btn_suiv.addEventListener('click', function(){
+  slider.scrollLeft = alreadyLeftScrolled - scrolled;
 
-stock ++
-slide(stock)
-
-
+  velocity = slider.scrollLeft - prevScrollLeft;
+ 
 })
 
+slider.addEventListener('mouseup', () => {
+  holding = false;
+  startTransition()
+})
+slider.addEventListener('mouseleave', () => {
+  holding = false;
+})
 
+function startTransition(){
 
+  stopTransition();
 
-function slide(recup){
+  rafID = requestAnimationFrame(decreasingTransition);
+}
 
-    if ( recup == 0){
-        slide_one.classList.add("active")
-        slide_two.classList.remove("active")
-        slide_three.classList.remove("active")
-        slide_four.classList.remove("active")
-        slide_five.classList.remove("active")
+function stopTransition(){
+  cancelAnimationFrame(rafID)
+}
+function decreasingTransition(){
 
-    }else if (recup == 1){
-        slide_one.classList.remove("active")
-        slide_two.classList.add("active")
-        slide_three.classList.remove("active")
-        slide_four.classList.remove("active")
-        slide_five.classList.remove("active")
-
-    }else if( recup == 2){
-
-        slide_one.classList.remove("active")
-        slide_two.classList.remove("active")
-        slide_three.classList.add("active")
-        slide_four.classList.remove("active")
-        slide_five.classList.remove("active")
-    }else if(recup == 3){
-        
-        slide_one.classList.remove("active")
-        slide_two.classList.remove("active")
-        slide_three.classList.remove("active")
-        slide_four.classList.add("active")
-        slide_five.classList.remove("active")
-
-
-
-    }else if(recup == 4){
-        slide_one.classList.remove("active")
-        slide_two.classList.remove("active")
-        slide_three.classList.remove("active")
-        slide_four.classList.remove("active")
-        slide_five.classList.add("active")
-        
-    }else if( recup > 4){
-
-
-
-        slide_one.classList.add("active")
-        slide_two.classList.remove("active")
-        slide_three.classList.remove("active")
-        slide_four.classList.remove("active")
-        slide_five.classList.remove("active")
-        stock = - 1
-    }else if(recup < 0){
-        slide_one.classList.remove("active")
-        slide_two.classList.remove("active")
-        slide_three.classList.remove("active")
-        slide_four.classList.remove("active")
-        slide_five.classList.add("active")
-        stock = 0
-
-    } else{
-        console.error(recup)
-    }
-
-
-
-
-
-
-
-
-
+  slider.scrollLeft += velocity;
+  velocity *= 0.95;
+  if(Math.abs(velocity) > 0.5){
+    rafID = requestAnimationFrame(decreasingTransition)
+    console.log(velocity);
+  }
 
 }
 
-slide(0)
+slider.addEventListener('touchstart', e => {
+  holding = true;
+  // pageX => la largeur entre mon click et le DOCUMENT
+  firstClickX = e.targetTouches[0].pageX - slider.offsetLeft;
 
-setInterval( function(){slide(stock++)}, 3000)
+  alreadyLeftScrolled = slider.scrollLeft;
+  stopTransition()
+})
+slider.addEventListener('touchend', () => {
+  holder = false;
+  startTransition()
+})
+slider.addEventListener('touchmove', e => {
+  if(!holding) return;
+
+  const x = e.targetTouches[0].pageX - slider.offsetLeft;
+
+  const scrolled = (x - firstClickX) * 2;
+
+  const prevScrollLeft = slider.scrollLeft;
+
+  slider.scrollLeft = alreadyLeftScrolled - scrolled;
+
+  velocity = slider.scrollLeft - prevScrollLeft;
+})
