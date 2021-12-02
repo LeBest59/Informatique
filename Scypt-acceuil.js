@@ -108,4 +108,4 @@ function slide(recup){
 
 slide(0)
 
-setInterval( function(){slide(stock++)}, 300000)
+setInterval( function(){slide(stock++)}, 3000)

@@ -46,7 +46,8 @@ main{
     width: 500px;
     height: 150px;
     margin: auto;
-    color: honeydew;}
+    color: honeydew;
+}
     
     
     
@@ -77,6 +78,8 @@ main{
         opacity : 0;
     
         transition: 0.5s;
+
+    border-radius: 20px;
     }
     
     #two {
@@ -107,13 +110,15 @@ main{
     
     .iconify{
     
-        background-color: lightblue;
+        background-color: white;
         border-radius: 100%;
         color: white;
         padding: 10px;
     }
     
-    .img-un{width: 600px;}
+    .img-un{width: 400px;}
     
-    .img-deux{width: 600px;}
+    .img-deux{width: 475px;}
+
+    .img-trois{width: 525px;}
     /* fin header footer */
