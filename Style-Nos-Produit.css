@@ -19,4 +19,32 @@ header{
     background-size: cover;
     height: 150px;
     background-repeat: no-repeat;
+<<<<<<< HEAD
+=======
+}
+/*-------------main----------*/
+.toolbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: #404040;
+    width: 100%;
+    height: 50px;
+}
+.recherche{
+    border-style: solid;
+    background-color: white;
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+}
+.menu{
+    border-style: solid;
+    background-color: rgb(107, 41, 41);
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+>>>>>>> b99423ee8bd03ca480b36f22c6ebdb4d3e4c2d5b
 }
