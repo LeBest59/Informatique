@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style-Nous-Contacté.css">
+    <title>Nous-Contacté</title>
+</head>
+<body>
+    <header>
+        <div><a href="Accueil.html">Accueil</a></div>
+        <div><a href="Nos-Produits.html">Nos Produits</a></div>
+        <div><a href="Nos-Services.html">Nos Services</a></div>
+        <div><a href="Nous-Contacté.html">Nous Contacté</a></div>
+    </header>
+    
+    <!--autofocus: le curseur est positionné dans cette case au chargement de la page
+    //placeholder: indication grisée 
+    //required: il faut renseigner le champs sinon la validation est bloquée
+    // type="tel": bascule le clavier sur un smartphone
+    // pattern: expression régulière à vérifier pour pouvoir valider
+    // type="number": bascule le clavier sur un smartphone -->
+    <main>
+        <h2 class="p1">Formulaire de contact</h2>
+<form action="#">
+  <p class="p1"><i>Complétez le formulaire. Les champs marqué par </i><em>*</em> sont <em>obligatoires</em></p>
+  <fieldset>
+      <legend>Information personnelles</legend>
+      <label for="nom">Nom <em>*</em></label>
+      <input id="nom" placeholder="Dupont" autofocus="" required=""><br><br>
+      <label for="telephone">Portable</label>
+      <input id="telephone" type="tel" placeholder="06xxxxxxxx" pattern="06[0-9]{8}"><br><br>
+      <label for="email">Email <em>*</em></label>
+      <input id="email" type="email" placeholder="prenom.nom@polytechnique.edu" required="" pattern="[a-zA-Z]*.[a-zA-Z]*@polytechnique.edu"><br>
+    </fieldset>
+    <br><br>
+    <fieldset>
+      <legend>Contact</legend>
+      <label for="comments">Pourquoi voulez-vous nous contacté?</label><br><br>
+      <textarea id="comments"></textarea>
+  </fieldset>
+  <div class="btn"><p><input type="submit" value="Soummettre"></p></div>
+</form>
+    </main>
+
+   
+</body>
+</html>

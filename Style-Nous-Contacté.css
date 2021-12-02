@@ -1,0 +1,42 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+}
+a:hover{
+    color: yellow;
+    transition: 1.5s;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/*----------header---------*/
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(header-background/Rectangle\ 4.png);
+    background-size: cover;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+/*------main---------*/
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.p1{
+    text-align: center;
+}
+legend{
+    text-align: center;
+}
+label{
+    justify-content: center;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
