@@ -21,100 +21,99 @@ header{
     background-repeat: no-repeat;
 }
 /*-------------main----------*/
-.para{
-    display: flex;
-    margin-left: 30%;
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    border-radius: 20px;
-    width: 40%;
-    background-color: #404040;
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-p{
-    color: white;
-    text-align: center;
-}
-.div-un-titre{background-color: rgb(61, 61, 61);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 500px;
-    height: 150px;
-    margin: auto;
-    color: honeydew;
-}
-    
-    
-    
-    
-    .content-slider{
-    
-        width: 80vw;
-        height: 80vh;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 30px;
-        color: black;
-    
-    }
-    
-    
-    .slide {
-    
-        width: 800px;
-        height: auto;
-    
-        background-color: #a6a7ad;
-    
-        display: none;
-        opacity : 0;
-    
-        transition: 0.5s;
 
-    border-radius: 20px;
-    }
-    
-    #two {
-        background-color:#a6a7ad;
-    }
-    
-    #three {
-    background-color:#a6a7ad;
-    }
-    
-    #four {background-color: #a6a7ad;
-    }
-    
-    #five {background-color:#a6a7ad;
-    }
-    
-    .active {
-        display: block;
-        opacity: 1;
-    }
-    
-    
-    .content-btn{
-        display: flex;
-        justify-content: space-around;
-        font-size: 25px;
-    }
-    
-    .iconify{
-    
-        background-color: white;
-        border-radius: 100%;
-        color: white;
-        padding: 10px;
-    }
-    
-    .img-un{width: 400px;}
-    
-    .img-deux{width: 475px;}
+body {
+  font-family: Roboto, Helvetica, sans-serif;
+  background: #f2f2f2;
+}
 
-    .img-trois{width: 525px;}
-    /* fin header footer */
+.main-content {
+  padding: 3vw 5vw 5vw;
+}
+h1 {
+  font-family: Playfair Display, serif;
+  font-size: clamp(25px, 7vw, 70px);
+  font-weight: 200;
+}
+h1 + span {
+  font-size: clamp(14px, 2vw, 20px);
+}
+.slideshow-container {
+  margin-top: 4vw;
+  overflow: hidden;
+  min-height: 60vmin;
+  cursor: grab;
+  position: relative;
+}
+.slideshow-container:active {
+  cursor: grabbing;
+}
+.slideshow {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  pointer-events: none;
+}
+.slide {
+  flex-shrink: 0;
+  height: 100%;
+  width: 80vmin;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.slide:not(:nth-child(1)){
+  margin-left: 10px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.15);
+}
+.slide h2, .slide a {
+  text-shadow: 0 0 5px rgba(0,0,0,0.39);
+}
+.slide h2 {
+  position: absolute;
+  top: clamp(10px, 2vw, 20px);
+  left: clamp(10px, 2vw, 20px);
+  font-size: clamp(20px, 3vw, 40px);
+  font-weight: 300;
+}
+.slide a {
+  position: absolute;
+  bottom: clamp(10px, 2vw, 20px);
+  right: clamp(10px, 2vw, 20px);
+  font-size: clamp(16px, 3vw, 20px);
+  font-weight: 300;
+  color: #fff;
+  pointer-events: auto;
+}
+
+
+.s1 {
+  background-image: url("https://www.tomshw.it/images/images/2020/12/razer-tomahawk-131279.jpg");
+}
+.s2 {
+  background-image: url("https://th.bing.com/th/id/R.fdfa3dcd6950e552e973bb89ca0f6855?rik=GuC3uZzisYisTQ&riu=http%3a%2f%2fwww.technocrazed.com%2fwp-content%2fuploads%2f2015%2f12%2fLenovo-Wallpaper-background15.jpg&ehk=KWKzCO5661YLYj7J7Ke5ySs7PNvXa5FqlrWRzomp5R8%3d&risl=&pid=ImgRaw&r=0");
+}
+.s3 {
+  background-image: url("https://th.bing.com/th/id/R.86af543c1dcdf4cbf0cf0be208553c42?rik=gLVctzHIOHiQ%2bg&riu=http%3a%2f%2fimgs.tom.com%2ftech%2f201906%2fCONTENT1396706F66784D85.jpg&ehk=YmGsG136qjv72IIyTFGeINji5L2w%2filuG6oMN3joG94%3d&risl=&pid=ImgRaw&r=0");
+}
+.s4 {
+  background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/06/Laptop-Asus-Wallpaper-For-Desktop.jpg");
+}
+.s5 {
+  background-image: url("https://th.bing.com/th/id/R.d1592794592f0797b12f46e97352a39d?rik=wCOjkMPjG9Pz2g&riu=http%3a%2f%2fwww.depannage-informatique-pc.net%2fwp-content%2fuploads%2f2013%2f10%2fbureau-ordinateur.png&ehk=2Ajsp2ThYvpOMlCmIKSCP0Ra%2f9%2bcs1vPEdvzu7nZ0hs%3d&risl=&pid=ImgRaw&r=0");
+}
