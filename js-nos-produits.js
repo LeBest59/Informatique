@@ -6,6 +6,6 @@ btn.addEventListener('click', recherche)
 
 function recherche(){
     
-    window.location.href = "HP.html?recherche=" + input.value
+    window.location.href = "recherche-produit.html?recherche=" + input.value
 }
 
