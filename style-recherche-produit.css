@@ -27,6 +27,10 @@ header{
     margin-top: 10px;
     justify-content: center;
 }
+body {
+    font-family: 'Fuzzy Bubbles', cursive;
+    background: #f2f2f2;
+}
 .div1{
     display: flex;
     margin: auto;

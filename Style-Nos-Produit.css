@@ -24,6 +24,10 @@ header{
     height: 150px;
     background-repeat: no-repeat;
 }
+body {
+    font-family: 'Fuzzy Bubbles', cursive;
+    background: #f2f2f2;
+}
 /*-------------main----------*/
 .toolbar{
     display: flex;
@@ -54,7 +58,6 @@ header{
     position: relative;
     display: inline-block;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -63,28 +66,23 @@ header{
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
-
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
-
-.dropdown-content  {background-color: #f1f1f1}
-
+.dropdown-content {
+    background-color: #f1f1f1
+}
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
-    background-color: #3e8e41;
-
     width: 150px;
     height: 30px;
 }
-
 .img-un{
     border-style: solid;
     border-color: black;
@@ -110,7 +108,6 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 }
 .btn-recherche{
     margin-right: 20px;
@@ -118,13 +115,25 @@ header{
 footer{
     display: flex;
     align-items: center;
-  }
-  .divfooter{
+}
+.divfooter{
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     margin-top: 20px;
     background-color: #404040;
-    
-  }
+}
+.pc-youtube{
+    display: flex;
+    justify-content: center;
+    background-image: url(youtube/pc-youtube.png);
+    width: 354px;
+    height: 300px;
+    background-repeat: no-repeat;
+}
+.youtube{
+    margin-top: 30px;
+    width: 238px;
+    height: 140px;
+}

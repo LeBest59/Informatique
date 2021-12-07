@@ -21,6 +21,10 @@ header{
     background-repeat: no-repeat;
 }
 
+body {
+    font-family: 'Fuzzy Bubbles', cursive;
+    background: #f2f2f2;
+  }
 .para{
     display: flex;
     margin-left: 30%;
