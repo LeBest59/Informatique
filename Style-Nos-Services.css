@@ -50,6 +50,20 @@ header{
     width: 40%;
     border-radius: 30px;
 }
+footer{
+    display: flex;
+    align-items: center;
+  }
+  .divfooter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #404040;
+    
+  }
 @media (max-width: 900px){
 .parentphoto{
     justify-content: center;

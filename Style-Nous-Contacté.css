@@ -13,6 +13,7 @@ a{
 .lien1{
     color: yellow;
 }
+
 /*----------header---------*/
 header{
     display: flex;
@@ -42,7 +43,4 @@ label{
 .btn{
     display: flex;
     justify-content: center;
-}
-footer{
-    border-style: solid;
 }

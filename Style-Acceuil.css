@@ -38,7 +38,7 @@ header{
 }
 
 body {
-  font-family: Roboto, Helvetica, sans-serif;
+  font-family: 'Fuzzy Bubbles', cursive;
   background: #f2f2f2;
 }
 
@@ -124,4 +124,17 @@ h1 + span {
 }
 .s5 {
   background-image: url("https://th.bing.com/th/id/R.d1592794592f0797b12f46e97352a39d?rik=wCOjkMPjG9Pz2g&riu=http%3a%2f%2fwww.depannage-informatique-pc.net%2fwp-content%2fuploads%2f2013%2f10%2fbureau-ordinateur.png&ehk=2Ajsp2ThYvpOMlCmIKSCP0Ra%2f9%2bcs1vPEdvzu7nZ0hs%3d&risl=&pid=ImgRaw&r=0");
+}
+footer{
+  display: flex;
+  align-items: center;
+}
+.divfooter{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  background-color: #404040;
+  
 }

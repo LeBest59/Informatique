@@ -1,6 +1,7 @@
 html,body{
     margin: 0px;
     padding: 0px;
+    font-family: 'Fuzzy Bubbles', cursive;
 }
 a:hover{
     color: yellow;
@@ -114,3 +115,16 @@ header{
 .btn-recherche{
     margin-right: 20px;
 }
+footer{
+    display: flex;
+    align-items: center;
+  }
+  .divfooter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #404040;
+    
+  }
